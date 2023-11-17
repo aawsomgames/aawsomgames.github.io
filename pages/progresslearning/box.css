@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.notes-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.note-list {
+    list-style: none;
+    padding: 0;
+}
+
+.note {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.sub-note-list,
+.sub-sub-note-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.sub-note,
+.sub-sub-note {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-left: 20px;
+}
+
+/* Added styles for links */
+a {
+    color: #000; /* Black color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styles for links on hover (optional) */
+a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
