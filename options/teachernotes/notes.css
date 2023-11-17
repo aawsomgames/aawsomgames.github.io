@@ -10,6 +10,12 @@ h1 {
     font-size: 32px;
 }
 
+/* Add the following styles for the links */
+a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color to black */
+}
+
 .note, .sub-note, .sub-sub-note {
     margin-left: 25px;
     margin-bottom: 0;
