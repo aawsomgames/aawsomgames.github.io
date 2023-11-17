@@ -52,9 +52,9 @@ p {
     margin-left: 20px;
 }
 
-/* Added styles for links */
+/* Modified styles for links */
 a {
-    color: #000; /* Black color */
+    color: #000; /* Set text color to black */
     text-decoration: none; /* Remove underline */
 }
 
