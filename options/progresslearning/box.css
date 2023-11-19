@@ -2,20 +2,21 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(144, 144, 144, 0.075);
+    background-color: #202024;
+    color: #BDBDBD; /* Default text color */
 }
 
 .notes-container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 20px;
     padding: 20px;
-    background-color: #000000;
+    background-color: #2C2C32;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #BDBDBD; /* Header Font Color */
 }
 
 .note-list {
@@ -24,31 +25,16 @@ h1 {
 }
 
 .note {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-.sub-note-list,
-.sub-sub-note-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.sub-note,
-.sub-sub-note {
-    border: 1px solid #ddd;
+    border: 3px solid #1B1B1F;
     padding: 10px;
     margin: 10px 0;
 }
 
 h2, h3 {
-    color: #333;
+    color: #BDBDBD; /* Main text color */
 }
 
 p {
-    color: #555;
     margin-left: 20px;
 }
 
@@ -61,4 +47,19 @@ a {
 /* Styles for links on hover (optional) */
 a:hover {
     text-decoration: underline; /* Add underline on hover if desired */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Adjust header font size for smaller screens */
+    }
+
+    .note {
+        border-width: 2px; /* Adjust border width for notes on smaller screens */
+    }
+
+    p {
+        margin-left: 10px; /* Adjust paragraph margin for smaller screens */
+    }
 }
