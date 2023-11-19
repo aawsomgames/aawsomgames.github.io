@@ -8,7 +8,7 @@ body {
 
 .notes-container {
     max-width: 100%;
-    margin: 20px;
+    margin: 20px 25px;
     padding: 20px;
     background-color: #2C2C32;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ p {
 
 /* Modified styles for links */
 a {
-    color: #000; /* Set text color to black */
+    color: #BDBDBD; /* Set text color to black */
     text-decoration: none; /* Remove underline */
 }
 
