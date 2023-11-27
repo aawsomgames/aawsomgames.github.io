@@ -1,7 +1,43 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.top-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #202024;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #BDBDBD;
+    text-decoration: none;
+    background-color: #2C2C32;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #50505a;
+}
+
+/* Add some space to the body to avoid content being hidden behind the fixed top buttons */
+body {
+    padding-top: 50px; /* Adjust this value based on the height of your top-buttons */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
     background-color: #202024;
     color: #BDBDBD; /* Default text color */
 }
@@ -40,7 +76,7 @@ p {
 
 /* Modified styles for links */
 a {
-    color: #BDBDBD; /* Set text color to black */
+    color: #BDBDBD; /* Set text color*/
     text-decoration: none; /* Remove underline */
 }
 

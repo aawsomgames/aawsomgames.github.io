@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write the Answer Test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<h1>Write the Answer Test</h1>
+
+<img src="downloads/pic01.jpg" alt="The new begining">
+
+<div id="questions-container"></div>
+<button onclick="submitAnswers()">Submit Answers</button>
+
+<script>
+    const questions = {
+        "Refers to the claim from the supporters of Andrew Jackson that John Quincy Adams and Henry Clay had worked out a deal to ensure that Adams was elected President by the House of Representatives in 1824": "Corrupt Bargain",
+        "What is the largest planet in our solar system?": "Jupiter",
+        "Who wrote 'Romeo and Juliet'?": "William Shakespeare"
+    };
+
+    function shuffleQuestionsAndAnswers() {
+        const shuffledQuestions = Object.keys(questions).sort(() => Math.random() - 0.5);
+        const shuffledAnswers = shuffledQuestions.map(question => questions[question]);
+
+        return {
+            questions: shuffledQuestions,
+            answers: shuffledAnswers
+        };
+    }
+
+    function buildQuestions() {
+        const container = document.getElementById("questions-container");
+        const { questions: shuffledQuestions, answers: shuffledAnswers } = shuffleQuestionsAndAnswers();
+
+        for (let i = 0; i < shuffledQuestions.length; i++) {
+            const label = document.createElement("label");
+            label.textContent = shuffledQuestions[i];
+
+            const input = document.createElement("input");
+            input.type = "text";
+            input.classList.add("answer-input");
+
+            container.appendChild(label);
+            container.appendChild(input);
+            container.appendChild(document.createElement("br"));
+        }
+
+        // Store the shuffled answers in a data attribute for later validation
+        container.dataset.shuffledAnswers = JSON.stringify(shuffledAnswers);
+    }
+
+    function submitAnswers() {
+        let score = 0;
+        const inputs = document.querySelectorAll(".answer-input");
+        const shuffledAnswers = JSON.parse(document.getElementById("questions-container").dataset.shuffledAnswers);
+
+        inputs.forEach((input, index) => {
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctAnswer = shuffledAnswers[index].toLowerCase();
+
+            if (userAnswer === correctAnswer) {
+                score++;
+            }
+        });
+
+        alert(`You scored ${score}/${shuffledAnswers.length}.`);
+    }
+
+    // Build questions when the page loads
+    document.addEventListener("DOMContentLoaded", buildQuestions);
+</script>
+
+</body>
+</html>
