@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Test</title>
+    <link rel="stylesheet" href="assets/test.css">
+</head>
+<body>
+
+<h1>Standard 7 Vocabulary Test</h1>
+
+<img src="assets/standard7.jpg" alt="The new begining">
+
+<div id="questions-container"></div>
+<button onclick="submitAnswers()">Submit Answers</button>
+
+<script>
+    const questions = {
+        "Refers to the claim from the supporters of Andrew Jackson that John Quincy Adams and Henry Clay had worked out a deal to ensure that Adams was elected President by the House of Representatives in 1824": "Corrupt Bargain",
+        "voting rights in which all adult males within a political system are allowed to vote, regardless of income, property, religion, or any other qualification": "Universal Male Suffrage",
+        "The average American citizen, whose concerns are represented in government": "Common Man",
+        "A political party formed by supporters of Andrew Jackson after the presidential election of 1824.": "Democratic Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Key to Jacksonian Democracy. People use to generally stay in office even after their party left. Jackson distributed federal jobs to his supporters. People who used to be in office left or were kicked out. Reward supporters, because common man can do any job.": "Spoil’s System",
+        "State does not follow a federal law, to declare void, refusal to do something, to cancel out": "Nullify",
+        "A high tariff on imports that benefited the industrial North while forcing Southerners to pay higher prices on manufactured goods. Ended up causing the Nullification crisis.": "Tariff of 1828",
+        "Lowered the tax from the Tariff of Abomination's tax but the tax was still to high for S. Carolinians": "Tariff of 1832",
+        "Jackson's once vice president who supported S. Carolina/ the Southerners during the Nullification crisis.": "John C. Calhoun",
+        "Southerners declared federal protective tariffs null and void, Jackson responded with Force bill and suggested compromising over tariff; John C Calhoun was a big advocate": "Nullification Crisis",
+        "Loyalty to local interests": "Sectionalism",
+        "Passed in 1830, authorized Andrew Jackson to negotiate land-exchange treaties with tribes living east of the Mississippi. The treaties enacted under this act's provisions paved the way for the reluctant—and often forcible—emigration of tens of thousands of American Indians to the West.": "Indian Removal Act",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+        "Political party formed in 1834 to oppose policies of Andrew Jackson": "Whig Party",
+    };
+
+    function shuffleQuestionsAndAnswers() {
+        const shuffledQuestions = Object.keys(questions).sort(() => Math.random() - 0.5);
+        const shuffledAnswers = shuffledQuestions.map(question => questions[question]);
+
+        return {
+            questions: shuffledQuestions,
+            answers: shuffledAnswers
+        };
+    }
+
+    function buildQuestions() {
+        const container = document.getElementById("questions-container");
+        const { questions: shuffledQuestions, answers: shuffledAnswers } = shuffleQuestionsAndAnswers();
+
+        for (let i = 0; i < shuffledQuestions.length; i++) {
+            const label = document.createElement("label");
+            label.textContent = shuffledQuestions[i];
+
+            const input = document.createElement("input");
+            input.type = "text";
+            input.classList.add("answer-input");
+
+            container.appendChild(label);
+            container.appendChild(input);
+            container.appendChild(document.createElement("br"));
+        }
+
+        // Store the shuffled answers in a data attribute for later validation
+        container.dataset.shuffledAnswers = JSON.stringify(shuffledAnswers);
+    }
+
+    function submitAnswers() {
+        let score = 0;
+        const inputs = document.querySelectorAll(".answer-input");
+        const shuffledAnswers = JSON.parse(document.getElementById("questions-container").dataset.shuffledAnswers);
+
+        inputs.forEach((input, index) => {
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctAnswer = shuffledAnswers[index].toLowerCase();
+
+            if (userAnswer === correctAnswer) {
+                score++;
+            }
+        });
+
+        alert(`You scored ${score}/${shuffledAnswers.length}.`);
+    }
+
+    // Build questions when the page loads
+    document.addEventListener("DOMContentLoaded", buildQuestions);
+</script>
+
+</body>
+</html>
