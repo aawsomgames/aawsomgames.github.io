@@ -1,0 +1,20 @@
+/* Fix color to match color padlet*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202024;
+}
+
+h1 {
+    color: #A1B1AE; /* You can choose your desired color */
+    text-align: center;
+    line-height: 1;
+    font-size: 32px;
+}
+
+.note, .sub-note, .sub-sub-note {
+    color: #A1B1AE;
+    margin-left: 25px;
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 18px;
+}
