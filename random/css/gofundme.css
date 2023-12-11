@@ -18,22 +18,23 @@ main {
 
 .fundraiser {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
 .fundraiser-image {
-    max-width: 25%;
+    max-width: 100%;
     height: auto;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .fundraiser-details {
-    flex-grow: 1;
+    text-align: center;
 }
 
 progress {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .donate-form {
@@ -68,4 +69,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (min-width: 600px) {
+    .fundraiser {
+        flex-direction: row;
+    }
+
+    .fundraiser-details {
+        text-align: left;
+    }
 }
