@@ -22,10 +22,16 @@ main {
     margin-bottom: 20px;
 }
 
-.fundraiser-image {
-    max-width: 100%;
-    height: auto;
+.fundraiser-images {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 10px;
+}
+
+.fundraiser-image {
+    max-width: 25%;
+    height: auto;
+    margin: 0 10px 10px 0;
 }
 
 .fundraiser-details {
@@ -76,6 +82,14 @@ footer {
 @media only screen and (min-width: 600px) {
     .fundraiser {
         flex-direction: row;
+    }
+
+    .fundraiser-images {
+        margin-bottom: 0;
+    }
+
+    .fundraiser-image {
+        margin: 0 20px 0 0;
     }
 
     .fundraiser-details {
