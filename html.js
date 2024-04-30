@@ -1,4 +1,3 @@
-// redirect.js
 
 // Check if the URL ends with .html
 if (window.location.pathname.endsWith('.html')) {
