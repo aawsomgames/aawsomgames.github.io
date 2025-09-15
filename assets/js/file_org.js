@@ -30,7 +30,7 @@ function renderEssays() {
   filtered.forEach((essay) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
-    a.href = `#${essay.id}`;
+    a.href = `files/${essay.id}`;
     a.textContent = essay.title;
     li.appendChild(a);
     listEl.appendChild(li);
