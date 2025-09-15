@@ -8,11 +8,11 @@ const ESSAYS = [
   {
     id: "2",
     title: "Comming Soon",
-    createdAt: "2023-05-20T15:30:00Z",
+    createdAt: "2029-05-20T15:30:00Z",
   },
   {
     id: "3",
-    title: "Reflections at Dusk",
-    createdAt: "2022-09-10T18:45:00Z",
+    title: "Comming Soon",
+    createdAt: "2029-09-10T18:45:00Z",
   },
 ];
