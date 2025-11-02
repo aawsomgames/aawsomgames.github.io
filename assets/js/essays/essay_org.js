@@ -25,7 +25,7 @@ function renderEssays() {
 
   filtered.forEach(essay => {
     const card = document.createElement("a");
-    card.href = `#${essay.id}`;
+    card.href = `essays/${essay.id}`;
     card.className = "essay-card";
 
     const title = document.createElement("div");
