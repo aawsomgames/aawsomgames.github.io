@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.popup h3 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+}
+
+.popup .category {
+  font-weight: 600;
+  color: #555;
+}
+
+.popup table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+
+.popup td {
+  padding: 2px 4px;
+}
+
+.popup td:first-child {
+  font-weight: 600;
+}
+
+/* Mapbox popup close button */
+.mapboxgl-popup-close-button {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
