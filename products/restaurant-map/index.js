@@ -2,7 +2,7 @@ mapboxgl.accessToken = "pk.eyJ1IjoiYWF3c29tZ2FtZXMiLCJhIjoiY21oaGc2eng2MGVsejJsc
 
 const map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/aawsomgames/cmkovphet005b01s14wtd9u0m",
+  style: "mapbox://styles/mapbox/streets-v12",
   center: [-84.9440, 32.4769],
   zoom: 12
 });
