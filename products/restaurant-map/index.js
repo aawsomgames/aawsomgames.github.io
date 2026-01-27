@@ -29,6 +29,60 @@ const restaurants = {
       }
     },
     {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9414, 32.4098] },
+      properties: {
+        name: "Rose's Caribbean Restaurant",
+        category: "Jamaican Restaurant",
+        address: "2039 Tourch Hill Rd #200, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "11:00 AM – 6:30 PM",
+          tuesday: "11:00 AM – 6:30 PM",
+          wednesday: "11:00 AM – 6:30 PM",
+          thursday: "11:00 AM – 6:30 PM",
+          friday: "11:00 AM – 6:30 PM",
+          saturday: "12:00 PM – 6:30 PM",
+          sunday: "Closed"
+        })
+      }
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9438, 32.4151] },
+      properties: {
+        name: "Country Wings",
+        category: "Chicken Wings",
+        address: "3754 Victory Dr, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "10:00 AM – 9:00 PM",
+          tuesday: "10:00 AM – 9:00 PM",
+          wednesday: "10:00 AM – 9:00 PM",
+          thursday: "10:00 AM – 9:00 PM",
+          friday: "10:00 AM – 10:00 PM",
+          saturday: "10:00 AM – 10:00 PM",
+          sunday: "11:00 AM – 8:00 PM"
+        })
+      }
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9471, 32.4219] },
+      properties: {
+        name: "Tacos El Paisa",
+        category: "Mexican",
+        address: "1649 Elvan Ave, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "11:00 AM – 10:30 PM",
+          tuesday: "11:00 AM – 10:30 PM",
+          wednesday: "11:00 AM – 10:30 PM",
+          thursday: "11:00 AM – 10:30 PM",
+          friday: "11:00 AM – 11:00 PM",
+          saturday: "11:00 AM – 11:00 PM",
+          sunday: "11:00 AM – 10:30 PM"
+        })
+      }
+    },
+    {
           type: "Feature",
           geometry: { type: "Point", coordinates: [-73.9772, 40.7527] },
           properties: {
@@ -87,7 +141,7 @@ const restaurants = {
           geometry: { type: "Point", coordinates: [-84.9508, 32.4221] },
           properties: {
             name: "Panaderia y Taqueria Tia Rose",
-            category: "Mexican, Bakery",
+            category: "Mexican / Bakery",
             address: "1671 S Lumpkin Rd, Columbus, GA",
             hours: JSON.stringify({
               monday: "10:00 AM – 8:00 PM",
