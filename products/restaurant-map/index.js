@@ -1,4 +1,4 @@
-mapboxgl.accessToken = "pk.eyJ1IjoiYWF3c29tZ2FtZXMiLCJhIjoiY21rdzAyNmZrMGMwZjNlcHhvNjlucnp5dCJ9.atDni5bOyDv2xcuWSoYFVQ";
+mapboxgl.accessToken = "pk.eyJ1IjoiYWF3c29tZ2FtZXMiLCJhIjoiY21reGowbWpmMDFscDNkcTFhZXNuaTY5cSJ9.yVfGpCGBY7dDBAJEyDb3jg";
 
 const map = new mapboxgl.Map({
   container: "map",
@@ -14,7 +14,7 @@ const restaurants = {
       type: "Feature",
       geometry: { type: "Point", coordinates: [-73.9851, 40.7479] },
       properties: {
-        name: "Test Location",
+        name: "Test",
         category: "Italian / Pizza",
         address: "7 Carmine St, New York, NY",
         hours: JSON.stringify({
