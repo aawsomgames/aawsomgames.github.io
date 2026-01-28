@@ -14,7 +14,7 @@ const restaurants = {
       type: "Feature",
       geometry: { type: "Point", coordinates: [-73.9851, 40.7479] },
       properties: {
-        name: "Joe's Pizza",
+        name: "Test Location",
         category: "Italian / Pizza",
         address: "7 Carmine St, New York, NY",
         hours: JSON.stringify({
