@@ -30,6 +30,60 @@ const restaurants = {
     },
     {
       type: "Feature",
+      geometry: { type: "Point", coordinates: [-73.9851, 40.7479] },
+      properties: {
+        name: "Da Funnel Cake Facory",
+        category: "Dessert Restaurant",
+        address: "1128 Fort Benning Rd Suite D, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "Closed",
+          tuesday: "Closed",
+          wednesday: "1:00 PM – 7:00 PM",
+          thursday: "1:00 PM – 7:00 PM",
+          friday: "1:00 PM – 7:00 PM",
+          saturday: "1:00 PM – 7:00 PM",
+          sunday: "1:00 PM – 7:00 PM"
+        })
+      }
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-73.9851, 40.7479] },
+      properties: {
+        name: "La Garita Restaurant & Bakery LLC",
+        category: "Puerto Rican Restaurant / Bakery",
+        address: "1230 Fort Benning Rd, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "Closed",
+          tuesday: "8:00 AM – 2:30 PM",
+          wednesday: "8:00 AM – 2:30 PM",
+          thursday: "8:00 AM – 2:30 PM",
+          friday: "8:00 AM – 2:30 PM",
+          saturday: "8:00 AM – 2:30 PM",
+          sunday: "Closed"
+        })
+      }
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9399, 32.4281] },
+      properties: {
+        name: "Wings Cafe 2",
+        category: "Chicken Wings Restaurant",
+        address: "1326 Fort Benning Rd, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "10:30 AM – 9:00 PM",
+          tuesday: "10:30 AM – 9:00 PM",
+          wednesday: "10:30 AM – 9:00 PM",
+          thursday: "10:30 AM – 9:00 PM",
+          friday: "10:30 AM – 9:00 PM",
+          saturday: "10:30 AM – 9:00 PM",
+          sunday: "11:00 AM – 8:00 PM"
+        })
+      }
+    },
+    {
+      type: "Feature",
       geometry: { type: "Point", coordinates: [-84.9406, 32.4187] },
       properties: {
         name: "CC's Place",
