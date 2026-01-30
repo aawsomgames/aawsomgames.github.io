@@ -30,7 +30,7 @@ const restaurants = {
     },
     {
       type: "Feature",
-      geometry: { type: "Point", coordinates: [-73.9851, 40.7479] },
+      geometry: { type: "Point", coordinates: [-84.9398, 32.4314] },
       properties: {
         name: "Da Funnel Cake Facory",
         category: "Dessert Restaurant",
@@ -48,7 +48,7 @@ const restaurants = {
     },
     {
       type: "Feature",
-      geometry: { type: "Point", coordinates: [-73.9851, 40.7479] },
+      geometry: { type: "Point", coordinates: [-84.9400, 32.4299] },
       properties: {
         name: "La Garita Restaurant & Bakery LLC",
         category: "Puerto Rican Restaurant / Bakery",
