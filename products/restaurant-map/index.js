@@ -30,6 +30,42 @@ const restaurants = {
     },
     {
       type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9406, 32.4187] },
+      properties: {
+        name: "CC's Place",
+        category: "Breakfast Restaurant",
+        address: "2023 Fort Benning Rd, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "6:00 AM – 11:00 AM",
+          tuesday: "6:00 AM – 11:00 AM",
+          wednesday: "6:00 AM – 11:00 AM",
+          thursday: "6:00 AM – 11:00 AM",
+          friday: "6:00 AM – 11:00 AM",
+          saturday: "6:00 AM – 11:00 AM",
+          sunday: "Closed"
+        })
+      }
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9401, 32.4180] },
+      properties: {
+        name: "Normita's Latin Amer Restaurant",
+        category: "Latin American Restaurant",
+        address: "2036 Fort Benning Rd, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "11:30 AM – 4:00 PM",
+          tuesday: "11:30 AM – 4:00 PM",
+          wednesday: "11:30 AM – 4:00 PM",
+          thursday: "11:30 AM – 4:00 PM",
+          friday: "11:30 AM – 4:00 PM",
+          saturday: "Closed",
+          sunday: "Closed"
+        })
+      }
+    },
+    {
+      type: "Feature",
       geometry: { type: "Point", coordinates: [-84.9417, 32.4167] },
       properties: {
         name: "China Number One Restaurant",
