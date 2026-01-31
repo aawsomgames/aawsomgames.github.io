@@ -178,7 +178,7 @@ const restaurants = {
       properties: {
         name: "Los Compadres Mexican Restaurant",
         category: "Mexican Restaurant",
-        address: "3250 Victory Dr, Columbus,GA",
+        address: "3250 Victory Dr, Columbus, GA",
         hours: JSON.stringify({
           monday: "11:00 AM – 8:30 PM",
           tuesday: "11:00 AM – 8:30 PM",
@@ -244,24 +244,6 @@ const restaurants = {
         })
       }
     },
-    {
-          type: "Feature",
-          geometry: { type: "Point", coordinates: [-73.9772, 40.7527] },
-          properties: {
-            name: "Sakura Sushi",
-            category: "Japanese",
-            address: "245 E 45th St, New York, NY",
-            hours: JSON.stringify({
-              monday: "12:00 PM – 10:00 PM",
-              tuesday: "12:00 PM – 10:00 PM",
-              wednesday: "12:00 PM – 10:00 PM",
-              thursday: "12:00 PM – 10:00 PM",
-              friday: "12:00 PM – 11:00 PM",
-              saturday: "1:00 PM – 11:00 PM",
-              sunday: "1:00 PM – 9:00 PM"
-            })
-          }
-        },
         {
           type: "Feature",
           geometry: { type: "Point", coordinates: [-84.9505, 32.4263] },
