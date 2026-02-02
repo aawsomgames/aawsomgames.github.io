@@ -30,6 +30,42 @@ const restaurants = {
     },
     {
       type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9454, 32.4218] },
+      properties: {
+        name: "WR TEST",
+        category: "Italian / Pizza",
+        address: "7 Carmine St, New York, NY",
+        hours: JSON.stringify({
+          monday: "11:00 AM – 10:00 PM",
+          tuesday: "11:00 AM – 10:00 PM",
+          wednesday: "11:00 AM – 10:00 PM",
+          thursday: "11:00 AM – 10:00 PM",
+          friday: "11:00 AM – 11:00 PM",
+          saturday: "12:00 PM – 11:00 PM",
+          sunday: "12:00 PM – 9:00 PM"
+        })
+      }
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9453, 32.4218] },
+      properties: {
+        name: "SF TEST",
+        category: "Italian / Pizza",
+        address: "7 Carmine St, New York, NY",
+        hours: JSON.stringify({
+          monday: "11:00 AM – 10:00 PM",
+          tuesday: "11:00 AM – 10:00 PM",
+          wednesday: "11:00 AM – 10:00 PM",
+          thursday: "11:00 AM – 10:00 PM",
+          friday: "11:00 AM – 11:00 PM",
+          saturday: "12:00 PM – 11:00 PM",
+          sunday: "12:00 PM – 9:00 PM"
+        })
+      }
+    },
+    {
+      type: "Feature",
       geometry: { type: "Point", coordinates: [-84.9398, 32.4314] },
       properties: {
         name: "Da Funnel Cake Facory",
