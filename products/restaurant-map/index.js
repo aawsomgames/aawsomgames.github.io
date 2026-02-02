@@ -30,7 +30,7 @@ const restaurants = {
     },
     {
       type: "Feature",
-      geometry: { type: "Point", coordinates: [-84.9454, 32.4218] },
+      geometry: { type: "Point", coordinates: [-84.94540, 32.42175] },
       properties: {
         name: "WR TEST",
         category: "Italian / Pizza",
