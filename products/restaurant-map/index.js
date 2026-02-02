@@ -48,7 +48,7 @@ const restaurants = {
     },
     {
       type: "Feature",
-      geometry: { type: "Point", coordinates: [-84.9453, 32.4218] },
+      geometry: { type: "Point", coordinates: [-84.94536, 32.42187] },
       properties: {
         name: "SF TEST",
         category: "Italian / Pizza",
