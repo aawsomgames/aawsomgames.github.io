@@ -30,19 +30,37 @@ const restaurants = {
     },
     {
       type: "Feature",
+      geometry: { type: "Point", coordinates: [-84.9452, 32.9452] },
+      properties: {
+        name: "Nori Japan",
+        category: "Japanese Restaurant",
+        address: "3515 Victroy Dr, Columbus, GA",
+        hours: JSON.stringify({
+          monday: "11:00 AM – 9:00 PM",
+          tuesday: "11:00 AM – 9:00 PM",
+          wednesday: "11:00 AM – 9:00 PM",
+          thursday: "11:00 AM – 9:00 PM",
+          friday: "11:00 AM – 9:00 PM",
+          saturday: "11:00 AM – 9:00 PM",
+          sunday: "11:00 AM – 9:00 PM"
+        })
+      }
+    },
+    {
+      type: "Feature",
       geometry: { type: "Point", coordinates: [-84.94540, 32.42175] },
       properties: {
-        name: "WR TEST",
-        category: "Italian / Pizza",
-        address: "7 Carmine St, New York, NY",
+        name: "BTJ Wings",
+        category: "Chicken Wing Restaurant",
+        address: "3517 Victory Dr, Columbus, GA",
         hours: JSON.stringify({
-          monday: "11:00 AM – 10:00 PM",
-          tuesday: "11:00 AM – 10:00 PM",
-          wednesday: "11:00 AM – 10:00 PM",
-          thursday: "11:00 AM – 10:00 PM",
-          friday: "11:00 AM – 11:00 PM",
-          saturday: "12:00 PM – 11:00 PM",
-          sunday: "12:00 PM – 9:00 PM"
+          monday: "11:00 AM – 9:30 PM",
+          tuesday: "11:00 AM – 9:30 PM",
+          wednesday: "11:00 AM – 9:30 PM",
+          thursday: "11:00 AM – 9:30 PM",
+          friday: "11:00 AM – 10:00 PM",
+          saturday: "11:00 AM – 10:00 PM",
+          sunday: "12:00 PM – 8:00 PM"
         })
       }
     },
@@ -50,17 +68,17 @@ const restaurants = {
       type: "Feature",
       geometry: { type: "Point", coordinates: [-84.94536, 32.42187] },
       properties: {
-        name: "SF TEST",
-        category: "Italian / Pizza",
-        address: "7 Carmine St, New York, NY",
+        name: "Columbus Crab House",
+        category: "Seafood Resturant",
+        address: "3517 Victory Dr Suite A-7, Columbus, GA",
         hours: JSON.stringify({
-          monday: "11:00 AM – 10:00 PM",
-          tuesday: "11:00 AM – 10:00 PM",
-          wednesday: "11:00 AM – 10:00 PM",
-          thursday: "11:00 AM – 10:00 PM",
-          friday: "11:00 AM – 11:00 PM",
-          saturday: "12:00 PM – 11:00 PM",
-          sunday: "12:00 PM – 9:00 PM"
+          monday: "11:00 AM – 9:00 PM",
+          tuesday: "11:00 AM – 9:00 PM",
+          wednesday: "11:00 AM – 9:00 PM",
+          thursday: "11:00 AM – 9:00 PM",
+          friday: "11:00 AM – 9:30 PM",
+          saturday: "11:00 AM – 9:30 PM",
+          sunday: "Closed"
         })
       }
     },
